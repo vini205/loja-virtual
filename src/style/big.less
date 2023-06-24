@@ -1,0 +1,106 @@
+@c-primary:#FFCA69;
+@c-secondary: #FFEA7D;
+@card-back: #AFBCFF;
+@margin:24px;
+
+header{
+    font-size: 2rem;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    row-gap: 30px;
+    section{
+        margin: 30px 0 0 0;
+        
+        &.desc-text{
+            padding: 4% 4% 4% 0;
+            width: 60%;
+        }
+        &.image{
+            padding: 4%;
+            width: 40%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            img{
+                border: 1px solid black;
+            }
+        }
+        &.card{
+            width: 100%;
+            height: 400px;
+            div.card{
+                height: 100%    ;
+                background-color: @c-primary;
+                width: 100%;
+                grid-template-columns: repeat(3, 33%);
+                gap: 0;
+                justify-items: center;
+                justify-content: center;
+                overflow: auto;
+                & > .cards{
+                    background-color: @card-back;
+                    padding: 24px;
+                    height: 300px;
+                    width: 70%;
+                    div.holder{
+                        justify-content: space-between;
+                    }
+                    div.img{
+                        height: 68%;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                    }
+                    img{
+                        width: 25%;
+                    }
+                    button{
+                        height: 25%;
+                        padding-left: 30%;
+                        background-size: 26px;
+                    }
+                }
+            }
+        }
+        
+    }
+    h2{
+        width: 100%;
+        margin-top: 60px;
+    }
+}
+footer{
+    flex-direction: row;
+    height: 100px;
+    font-size: 2rem;
+    .logo{
+        width: 50%;
+        padding-left: 5%;
+    }
+    div.footer__info{
+        width: 50%;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 5%;
+        gap: 10px;
+    }
+    .phone, .email{
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+        background-position-x: 5%;
+        padding-left: 40px;
+        background-size: 20px;
+        font-size: 1.5rem;
+    }
+}

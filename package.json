@@ -2,15 +2,16 @@
   "name": "landing-market",
   "version": "1.0.0",
   "description": "Landing page of a online shop ",
-  "source": "index.html",
+  "source": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel",
-    "build":"parcel build"
+    "build": "parcel build"
   },
   "author": "Vinícus Gonçalves",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-less": "^2.9.2",
     "parcel": "^2.9.2"
   }
 }

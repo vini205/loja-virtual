@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background: #ffca69;
+  width: 100%;
+  padding: 1rem;
+}
+
+main {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+main section {
+  margin: 24px 24px 30px;
+}
+
+main section.desc-text {
+  text-align: justify;
+}
+
+main section.image {
+  text-align: center;
+  background: #d9d9d9;
+  padding: 24px;
+}
+
+main section.image article.image {
+  width: 100%;
+}
+
+main section.card {
+  margin: 0;
+}
+
+main section.card div.card {
+  background: #d9d9d9;
+  grid-template-columns: repeat(3, 60%);
+  align-items: center;
+  gap: 30px;
+  height: 300px;
+  padding: 24px;
+  display: grid;
+  overflow-x: scroll;
+}
+
+main section.card div.cards {
+  box-sizing: content-box;
+  background: #fff;
+  border-radius: 3px;
+  width: 150px;
+  height: 200px;
+  padding: 10px;
+  display: inline-block;
+}
+
+main section.card div.cards div.holder {
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  display: flex;
+}
+
+main section.card div.cards div.holder div.img {
+  text-align: center;
+  background-color: #fff;
+}
+
+main section.card div.cards button {
+  text-align: left;
+  background-color: #ffea7d;
+  background-image: url("carrinho.0f2a08f4.svg");
+  background-position: 82% 44%;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+}
+
+div.card {
+  scroll-behavior: smooth;
+}
+
+div.card::-webkit-scrollbar-track {
+  background: none;
+}
+
+div.card::-webkit-scrollbar-thumb {
+  background-color: #ffca69;
+  border: .5px solid #000;
+  border-radius: 10px;
+}
+
+div.card::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+footer {
+  background-color: #ffca69;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 70px;
+  display: flex;
+}
+
+footer div.footer__info {
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 10px;
+  font-family: sans-serif;
+  display: flex;
+}
+
+.phone {
+  background-image: url("phone.181bcdd6.svg");
+}
+
+.email {
+  background-image: url("email.81126b85.svg");
+}
+
+.phone, .email {
+  background-position: 5%;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  height: 23px;
+  padding-left: 40px;
+  font-size: .8rem;
+}
+
+/*# sourceMappingURL=index.12eab251.css.map */
